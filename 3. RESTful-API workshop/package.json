@@ -1,0 +1,14 @@
+{
+  "name": "3.-restful-api-workshop",
+  "version": "1.0.0",
+  "description": "Welcome to the RESTful API Workshop. The goal for this workshop is for you to get familiar with RESTful API concepts and have some hands on experience with interactive with an API. You will perform CRUD operations, that is, Create, Read, Update and Delete operations on an API that we have created. You may use any tools to interact with the API, such as JavaScript, Python and Postman.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
