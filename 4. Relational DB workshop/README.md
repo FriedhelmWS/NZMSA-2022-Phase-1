@@ -6,6 +6,11 @@ Here is an assignment to help you review your knowledge.
 
 > 1. Write an SQL statement that lists school names, student names, and their cities only if the school and the student are in the same city and the student is not from New York.
 
+> Answer:
+> SELECT school.school_name, student.school_name, student.city
+> FROM school, student
+> WHERE school.school_id = student.student_id AND student.city = school.city AND student.city != 'New York'
+
 **Table: school**
 
 | school_id | school_name        | city          |
@@ -30,6 +35,11 @@ Here is an assignment to help you review your knowledge.
 | 1008       | Johse Brook  | Miami         | 2         |
 
 > 2. Write an SQL statement that lists student names, subject names, subject lecturers, and the max amount of points for all subjects except Computer Science and any subjects with a max score between 100 and 200.
+
+> Answer:
+> SELECT student.student_name, school.subject_name, school.lecturer, MAX(max_score) as max_val
+> FROM school, student
+> WHERE school.subject_name != 'Computer Science' AND school.max_score <= 200 AND school.max_score >= 100
 
 **Table: school**
 
